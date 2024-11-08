@@ -14,9 +14,9 @@ algokit project deploy
 
 ## Working screenshots:
 
-![one](./images/one.png)
+![one](./images/1.png)
 
-![two](./images/two.png)
+![two](./images/2.png)
 
 
 ## Points of learning
