@@ -1,22 +1,34 @@
-# dvrel
+## Algorand exercise
 
-Welcome to your new AlgoKit project!
+Build with:
 
-This is your workspace root. A `workspace` in AlgoKit is an orchestrated collection of standalone projects (backends, smart contracts, frontend apps and etc).
+```
+algokit project run build
+```
 
-By default, `projects_root_path` parameter is set to `projects`. Which instructs AlgoKit CLI to create a new directory under `projects` directory when new project is instantiated via `algokit init` at the root of the workspace.
+Deploy with:
 
-## Getting Started
+```
+algokit project deploy
+```
 
-To get started refer to `README.md` files in respective sub-projects in the `projects` directory.
+## Working screenshots:
 
-To learn more about algokit, visit [documentation](https://github.com/algorandfoundation/algokit-cli/blob/main/docs/algokit.md).
+![one](./images/one.png)
 
-### GitHub Codespaces
+![two](./images/two.png)
 
-To get started execute:
 
-1. `algokit generate devcontainer` - invoking this command from the root of this repository will create a `devcontainer.json` file with all the configuration needed to run this project in a GitHub codespace. [Run the repository inside a codespace](https://docs.github.com/en/codespaces/getting-started/quickstart) to get started.
-2. `algokit init` - invoke this command inside a github codespace to launch an interactive wizard to guide you through the process of creating a new AlgoKit project
+## Points of learning
 
-Powered by [Copier templates](https://copier.readthedocs.io/en/stable/).
+1. Command to deploy the project is wrong (sent a PR [here](https://github.com/algorandfoundation/docs/pull/1278) to correct it)
+2. While running localnet, I got an error while trying to create a wallet and send money. [this](https://github.com/algorandfoundation/algokit-cli/issues/579) helped to fix the error.
+3. While creating a Box on the smart contract, we need to populate sources while sending the transaction to call the method. (its not indicated in the docs). [Discord](https://discord.com/channels/491256308461207573/1271207863766880317/threads/1301578731407540328) helped me fix it.
+
+## Bonus: Deployed on Test network
+
+App deployed (check box state)
+[lora](https://lora.algokit.io/testnet/application/728704886)
+
+Transaction ID:
+[lora](https://lora.algokit.io/testnet/transaction/SFGHL5PS6UP64AMUUG4YISNHGF2BLBLJOHHA7SN4OYEDTUH2NPPQ)
